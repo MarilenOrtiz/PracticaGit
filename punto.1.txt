@@ -1,3 +1,47 @@
      ###PASOS Y COMANDOS###
 
+:wq
+
+%configuracion con mis datos
+a- para ver los datos
+	$git config -l
+b- para agregar rotulo
+
+	$git config --global user.name "Marilen"
+	
+b- para agregar email
+
+	$git config --global user.email "m-ortiz-23@hotmail.com"
+	
+%%PASOS PARA CREAR EL REPOSITORIO Y VINCULARLOgot 
+
 1. Creo un repositorio remoto (en la web). 
+
+2- Voy al archivo en la computadora, apreto boton derecho- Git Bash
+
+3- Para inicializar el repositorio, escribimos
+
+               $ git init
+
+4- Unir el local con el remoto
+
+		$ git remote add origin https://github.com/MarilenOrtiz/PracticaGit.git
+
+ *origin-> alias que le doy, puede ser cualquiera
+ *https://github.com/MarilenOrtiz/PracticaGit.git -> direccion del repositorio remoto.
+
+5- para ver que se cargo bien pongo:
+
+		$git remote -v
+
+%%%enviamos el repositorio
+1. para ver que lo tiene el archivo
+
+		$git status
+2. añado 
+		$git add .
+3. commit
+		$git commit -m "primer commit"
+4. envio-push para enviarlo
+		$ git push origin master
+
